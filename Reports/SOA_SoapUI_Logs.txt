@@ -1,0 +1,144 @@
+================================
+=
+= SOAPUI_HOME = /Applications/SoapUI-5.0.0.app/Contents/java/app
+=
+================================
+2014-11-20 18:10:01,297 [main] WARN  com.eviware.soapui.SoapUI - Could not find jfxrt.jar. Internal browser will be disabled.
+SoapUI 5.0.0 TestCase Runner
+Configuring log4j from [/Applications/SoapUI-5.0.0.app/Contents/java/app/bin/soapui-log4j.xml]
+18:10:01,942 INFO  [DefaultSoapUICore] initialized soapui-settings from [/Users/vthakur/soapui-settings.xml]
+18:10:05,328 INFO  [WsdlProject] Loaded project from [file:/Users/vthakur/SOAPUI/REST-Project-1-soapui-project.xml]
+18:10:06,105 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [SOA-252 REST project]
+18:10:06,106 INFO  [SoapUITestCaseRunner] Running TestSuite [SOA-252 Builder Rest TestSuite], runType = SEQUENTIAL
+18:10:06,117 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [Cdft TestCase]
+18:10:06,123 INFO  [SoapUITestCaseRunner] running step [Retrieve CDFT]
+18:10:06,185 ERROR [SoapUI] An error occurred [Illegal character in path at index 69: http://mabosmindtapm20.corp.local:8181/services/v1.0/courses/builder/{$cdft}], see error log for details
+18:10:06,880 INFO  [SoapUITestCaseRunner] Assertion [Valid HTTP Status Codes] has status FAILED
+18:10:06,880 ERROR [SoapUITestCaseRunner] ASSERTION FAILED -> Response status code:404 is not in acceptable list of status codes
+18:10:06,880 ERROR [SoapUITestCaseRunner] Retrieve CDFT failed, exporting to [/Users/vthakur/SOAPUI/Reports/SOA252_Builder_Rest_TestSuite-Cdft_TestCase-Retrieve_CDFT-0-FAILED.txt]
+18:10:06,890 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [Cdft TestCase], time taken: 649ms, status: FAILED
+18:10:06,890 INFO  [SoapUITestCaseRunner] TestSuite [SOA-252 Builder Rest TestSuite] finished with status [FAILED] in 780ms
+
+SoapUI 5.0.0 TestCaseRunner Summary
+-----------------------------
+Time Taken: 785ms
+Total TestSuites: 1
+Total TestCases: 1 (1 failed)
+Total TestSteps: 1
+Total Request Assertions: 1
+Total Failed Assertions: 1
+Total Exported Results: 1
+18:10:06,900 ERROR [SoapUITestCaseRunner] java.lang.Exception: Valid HTTP Status Codes in [Retrieve CDFT] failed;
+[Response status code:404 is not in acceptable list of status codes]
+Status: FAILED
+Time Taken: 649
+Size: 1267
+Timestamp: Thu Nov 20 18:10:06 EST 2014
+TestStep: Retrieve CDFT
+
+----------------- Messages ------------------------------
+[Valid HTTP Status Codes] Response status code:404 is not in acceptable list of status codes
+
+----------------- Properties ------------------------------
+StatusCode: 404
+Encoding: UTF-8
+Method: GET
+HTTP Version: HTTP/1.1
+Endpoint: http://mabosmindtapm20.corp.local:8181
+URL: http://mabosmindtapm20.corp.local:8181/
+
+---------------- Request ---------------------------
+Host: [mabosmindtapm20.corp.local:8181]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET http://mabosmindtapm20.corp.local:8181/ HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: mabosmindtapm20.corp.local:8181
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+#status#: [HTTP/1.1 404 Not Found]
+Content-Length: [1267]
+Content-Type: [text/html;charset=ISO-8859-1]
+Server: [Jetty(7.6.8.v20121106)]
+Cache-Control: [must-revalidate,no-cache,no-store]
+
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+      <title>Error 404 Not Found</title>
+   </head>
+   <body>
+      <h2>HTTP ERROR: 404</h2>
+      <p>
+         Problem accessing /. Reason:
+         <pre>Not Found</pre>
+      </p>
+      <hr/>
+      <i>
+         <small>Powered by Jetty://</small>
+      </i>
+   </body>
+</html>
+
+18:10:06,901 ERROR [SoapUI] An error occurred [Valid HTTP Status Codes in [Retrieve CDFT] failed;
+[Response status code:404 is not in acceptable list of status codes]
+Status: FAILED
+Time Taken: 649
+Size: 1267
+Timestamp: Thu Nov 20 18:10:06 EST 2014
+TestStep: Retrieve CDFT
+
+----------------- Messages ------------------------------
+[Valid HTTP Status Codes] Response status code:404 is not in acceptable list of status codes
+
+----------------- Properties ------------------------------
+StatusCode: 404
+Encoding: UTF-8
+Method: GET
+HTTP Version: HTTP/1.1
+Endpoint: http://mabosmindtapm20.corp.local:8181
+URL: http://mabosmindtapm20.corp.local:8181/
+
+---------------- Request ---------------------------
+Host: [mabosmindtapm20.corp.local:8181]
+Accept-Encoding: [gzip,deflate]
+User-Agent: [Apache-HttpClient/4.1.1 (java 1.5)]
+Connection: [Keep-Alive]
+
+GET http://mabosmindtapm20.corp.local:8181/ HTTP/1.1
+Accept-Encoding: gzip,deflate
+Host: mabosmindtapm20.corp.local:8181
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.1.1 (java 1.5)
+
+
+---------------- Response --------------------------
+#status#: [HTTP/1.1 404 Not Found]
+Content-Length: [1267]
+Content-Type: [text/html;charset=ISO-8859-1]
+Server: [Jetty(7.6.8.v20121106)]
+Cache-Control: [must-revalidate,no-cache,no-store]
+
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+      <title>Error 404 Not Found</title>
+   </head>
+   <body>
+      <h2>HTTP ERROR: 404</h2>
+      <p>
+         Problem accessing /. Reason:
+         <pre>Not Found</pre>
+      </p>
+      <hr/>
+      <i>
+         <small>Powered by Jetty://</small>
+      </i>
+   </body>
+</html>
+], see error log for details

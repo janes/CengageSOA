@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="SOA Smoke Project" resourceRoot="" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="SOA Smoke TestSuite"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="/Users/vthakur/SOAPUI/Reports"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value="http://mabosmindtapm20:8181"/>
+  <con:entry key="Select Report Type" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://mabosmindtapm20.corp.local:8181" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://mabosmindtapm20.corp.local:8181</con:endpoint></con:endpoints><con:resource name="EQJQC9ETB219ZND5J921" path="/services/${#Project#version}/courses/${#TestCase#c_cgi}"><con:settings/><con:parameters><con:parameter><con:name>view</con:name><con:value>flat</con:value><con:style>QUERY</con:style><con:default>flat</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="EQJQC9ETB219ZND5J921" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:eqj="http://mabosmindtapm20.corp.local/services/v1/courses/EQJQC9ETB219ZND5J921">eqj:Response</con:element></con:representation><con:request name="Course Flat view" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://mabosmindtapm20.corp.local:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>view</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://mabosmindtapm20.corp.local:8181" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://mabosmindtapm20.corp.local:8181</con:endpoint></con:endpoints><con:resource name="JHUDRB281213454,invalidNode,PDTDGC440197374,HDHKAUM4BB534EMLY981,QYSWDST73BZRBL6JF108,PXKMBC3REMNAF4CWJ515" path="/services/${#Project#version}/courses/${#TestCase#c_cgi}/node/${#TestCase#c_node}"><con:settings/><con:parameters/><con:method name="JHUDRB281213454,invalidNode,PDTDGC440197374,HDHKAUM4BB534EMLY981,QYSWDST73BZRBL6JF108,PXKMBC3REMNAF4CWJ515" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=ISO-8859-1</con:mediaType><con:status>500</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Course Retrieve Nodes" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://mabosmindtapm20.corp.local:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://mabosmindtapm20.corp.local:8181" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://mabosmindtapm20.corp.local:8181</con:endpoint></con:endpoints><con:resource name="VSYHOX707529696" path="/services/metadata/${#Project#version}/courses/${#TestCase#c_cgi}/asset/${#TestCase#asset_id}"><con:settings/><con:parameters><con:parameter><con:name>output</con:name><con:value>structure</con:value><con:style>QUERY</con:style><con:default>structure</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="VSYHOX707529696" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:vsy="http://mabosmindtapm20.corp.local/services/metadata/v1/courses/RRZRFE116470341/asset/VSYHOX707529696">vsy:Response</con:element></con:representation><con:request name="Metadata Chapter Assets" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://mabosmindtapm20.corp.local:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>output</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://mabosmindtapm20:8181" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://mabosmindtapm20:8181</con:endpoint></con:endpoints><con:resource name="Narratives" path="/services/narrative/${#Project#version}/narratives/"><con:settings/><con:parameters><con:parameter><con:name>ids</con:name><con:value>ADWOTM405277750,PVYMUT059816719,VDOUGD236510217,OWMJWW761995312,PLFMYT182291620</con:value><con:style>QUERY</con:style><con:default>ADWOTM405277750,PVYMUT059816719,VDOUGD236510217,OWMJWW761995312,PLFMYT182291620</con:default><con:path xsi:nil="true"/><con:description xsi:nil="true"/></con:parameter></con:parameters><con:method name="Narratives" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Narrative Reterival" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://mabosmindtapm20:8181</con:endpoint><con:request/><con:originalUri>http://mabosmindtapm20/services/narrative/v1/narratives/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ids" value="${#TestCase#narrative}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>ids</con:entry></con:parameterOrder></con:request></con:method></con:resource></con:interface><con:testSuite name="SOA Smoke TestSuite"><con:description>TestSuite generated for REST Service [http://mabosmindtapm20.corp.local:8181]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Course Flat view TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [EQJQC9ETB219ZND5J921] located at [/services/${#TestCase#version}/courses/${#TestCase#c_cgi}]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script1"><con:settings/><con:config><script>import jxl.*
+
+def XLPath = "/Users/vthakur/SOAPUI/Data/SoapUI_Smoke.xls"
+
+def NumOfXLSRows
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows()
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+
+	
+	c_cgi = objSheet.getCell(2,2).getContents()
+	
+	log.info("Course Cgi for: " + c_cgi)
+	
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	
+	//testRunner.runTestStepByName("Course Flat view")	
+
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Course Flat view"><con:settings/><con:config service="http://mabosmindtapm20.corp.local:8181" resourcePath="/services/${#Project#version}/courses/${#TestCase#c_cgi}" methodName="EQJQC9ETB219ZND5J921" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Course Flat view" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://mabosmindtapm20.corp.local:8181</con:endpoint><con:request/><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>${#TestCase#c_cgi}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>view</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Course Hierarchy view TestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [EQJQC9ETB219ZND5J921] located at [/services/${#TestCase#version}/courses/${#TestCase#c_cgi}]</con:description><con:settings/><con:testStep type="groovy" name="Groovy Script2"><con:settings/><con:config><script>import jxl.*
+
+def XLPath = "/Users/vthakur/SOAPUI/Data/SoapUI_Smoke.xls"
+
+def NumOfXLSRows
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows()
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+
+	
+	c_cgi = objSheet.getCell(2,2).getContents()
+	
+	log.info("Course Cgi for: " + c_cgi)
+	
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	
+
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Course Hierarchy view"><con:settings/><con:config service="http://mabosmindtapm20.corp.local:8181" resourcePath="/services/${#Project#version}/courses/${#TestCase#c_cgi}" methodName="EQJQC9ETB219ZND5J921" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Course Flat view" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://mabosmindtapm20.corp.local:8181</con:endpoint><con:request/><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>${#TestCase#c_cgi}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="view" value="hierarchy" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>view</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>EQJQC9ETB219ZND5J921</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Course Retrieve Nodes TestCase" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script3"><con:settings/><con:config><script>import jxl.*
+
+def XLPath = "/Users/vthakur/SOAPUI/Data/SoapUI_Smoke.xls"
+
+def NumOfXLSRows
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows()
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+
+	c_cgi = objSheet.getCell(2,7).getContents()
+	c_node = objSheet.getCell(3,7).getContents()
+	
+	log.info("Course Cgi for: " + c_cgi + " nodes " + c_node)
+	
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("c_node", c_node)
+	
+	//testRunner.runTestStepByName("Course Retrieve Nodes")
+	
+
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Course Retrieve Nodes"><con:settings/><con:config service="http://mabosmindtapm20.corp.local:8181" resourcePath="/services/${#Project#version}/courses/${#TestCase#c_cgi}/node/${#TestCase#c_node}" methodName="JHUDRB281213454,invalidNode,PDTDGC440197374,HDHKAUM4BB534EMLY981,QYSWDST73BZRBL6JF108,PXKMBC3REMNAF4CWJ515" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Course Retrieve Nodes" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://mabosmindtapm20.corp.local:8181</con:endpoint><con:request/><con:originalUri>http://mabosmindtapm20.corp.local/services/v1/courses/EQJQC9ETB219ZND5J921/node/JHUDRB281213454,invalidNode,PDTDGC440197374,HDHKAUM4BB534EMLY981,QYSWDST73BZRBL6JF108,PXKMBC3REMNAF4CWJ515</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>EQJQC9ETB219ZND5J921</con:value></con:property><con:property><con:name>c_node</con:name><con:value>JHUDRB281213454,invalidNode,PDTDGC440197374,HDHKAUM4BB534EMLY981,QYSWDST73BZRBL6JF108,PXKMBC3REMNAF4CWJ515</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Metadata Chapter Structure view TestCase" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script4"><con:settings/><con:config><script>import jxl.*
+
+def XLPath = "/Users/vthakur/SOAPUI/Data/SoapUI_Smoke.xls"
+
+def NumOfXLSRows
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows()
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+
+	c_cgi = objSheet.getCell(2,12).getContents()
+	asset_id = objSheet.getCell(3,12).getContents()
+	
+	log.info("4LTR Course Cgi for: " + c_cgi + " 4LTR Asset Id: " + asset_id)
+	
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("asset_id", asset_id)
+
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Metadata Chapter Structure View"><con:settings/><con:config service="http://mabosmindtapm20.corp.local:8181" resourcePath="/services/metadata/${#Project#version}/courses/${#TestCase#c_cgi}/asset/${#TestCase#asset_id}" methodName="VSYHOX707529696" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Metadata Chapter Assets TestCase" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://mabosmindtapm20.corp.local:8181</con:endpoint><con:request/><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>${#TestCase#asset_id}</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder><con:entry>output</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>RRZRFE116470341</con:value></con:property><con:property><con:name>asset_id</con:name><con:value>VSYHOX707529696</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Metadata Chapter PreviewItems view TestCase" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script5"><con:settings/><con:config><script>import jxl.*
+
+def XLPath = "/Users/vthakur/SOAPUI/Data/SoapUI_Smoke.xls"
+
+def NumOfXLSRows
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows()
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+
+	c_cgi = objSheet.getCell(2,12).getContents()
+	asset_id = objSheet.getCell(3,12).getContents()
+	
+	log.info("4LTR Course Cgi for: " + c_cgi + " 4LTR Asset Id: " + asset_id)
+	
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("asset_id", asset_id)
+	
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Metadata Chapter PreviewItems View"><con:settings/><con:config service="http://mabosmindtapm20.corp.local:8181" resourcePath="/services/metadata/${#Project#version}/courses/${#TestCase#c_cgi}/asset/${#TestCase#asset_id}" methodName="VSYHOX707529696" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Metadata Chapter Assets" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://mabosmindtapm20.corp.local:8181</con:endpoint><con:request/><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="output" value="previewitems" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>output</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>RRZRFE116470341</con:value></con:property><con:property><con:name>asset_id</con:name><con:value>VSYHOX707529696</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Metadata Chapter LearningObjectives view TestCase" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script6"><con:settings/><con:config><script>import jxl.*
+
+def XLPath = "/Users/vthakur/SOAPUI/Data/SoapUI_Smoke.xls"
+
+def NumOfXLSRows
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows()
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+
+	c_cgi = objSheet.getCell(2,12).getContents()
+	asset_id = objSheet.getCell(3,12).getContents()
+	
+	log.info("4LTR Course Cgi for: " + c_cgi + " 4LTR Asset Id: " + asset_id)
+	
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("asset_id", asset_id)
+	
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Metadata Chapter LearningObjectives View"><con:settings/><con:config service="http://mabosmindtapm20.corp.local:8181" resourcePath="/services/metadata/${#Project#version}/courses/${#TestCase#c_cgi}/asset/${#TestCase#asset_id}" methodName="VSYHOX707529696" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Metadata Chapter PreviewItems View" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://mabosmindtapm20.corp.local:8181</con:endpoint><con:request/><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>Learning Objective</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="output" value="learningobjectives" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>output</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>RRZRFE116470341</con:value></con:property><con:property><con:name>asset_id</con:name><con:value>VSYHOX707529696</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Metadata Chapter Ahead view TestCase" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script7"><con:settings/><con:config><script>import jxl.*
+
+def XLPath = "/Users/vthakur/SOAPUI/Data/SoapUI_Smoke.xls"
+
+def NumOfXLSRows
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows()
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+
+	c_cgi = objSheet.getCell(2,12).getContents()
+	asset_id = objSheet.getCell(3,12).getContents()
+	
+	log.info("4LTR Course Cgi for: " + c_cgi + " 4LTR Asset Id: " + asset_id)
+	
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("asset_id", asset_id)
+	
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Metadata Chapter Ahead View"><con:settings/><con:config service="http://mabosmindtapm20.corp.local:8181" resourcePath="/services/metadata/${#Project#version}/courses/${#TestCase#c_cgi}/asset/${#TestCase#asset_id}" methodName="VSYHOX707529696" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Metadata Chapter PreviewItems View" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://mabosmindtapm20.corp.local:8181</con:endpoint><con:request/><con:originalUri>http://mabosmindtapm20.corp.local/services/metadata/v1/courses/RRZRFE116470341/asset/VSYHOX707529696</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>A-Head</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="output" value="ahead" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>output</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>RRZRFE116470341</con:value></con:property><con:property><con:name>asset_id</con:name><con:value>VSYHOX707529696</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Metadata Chapter Bhead view TestCase" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script8"><con:settings/><con:config><script>import jxl.*
+
+def XLPath = "/Users/vthakur/SOAPUI/Data/SoapUI_Smoke.xls"
+
+def NumOfXLSRows
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows()
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+
+	c_cgi = objSheet.getCell(2,13).getContents()
+	asset_id = objSheet.getCell(3,13).getContents()
+	
+	log.info("4LTR Course Cgi for: " + c_cgi + " 4LTR Asset bhead: " + asset_id)
+	
+
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("asset_id", asset_id)
+	
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Metadata Chapter Bhead View"><con:settings/><con:config service="http://mabosmindtapm20.corp.local:8181" resourcePath="/services/metadata/${#Project#version}/courses/${#TestCase#c_cgi}/asset/${#TestCase#asset_id}" methodName="VSYHOX707529696" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Metadata Chapter Ahead View" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://mabosmindtapm20:8181</con:endpoint><con:request/><con:originalUri>http://mabosmindtapm20.corp.local/services/metadata/v1/courses/RRZRFE116470341/asset/VSYHOX707529696</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>B-Head</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="output" value="bhead" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>output</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>RRZRFE116470341</con:value></con:property><con:property><con:name>asset_id</con:name><con:value>YUUFMF715234711</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Narrative Reterival TestCase" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Groovy Script9"><con:settings/><con:config><script>import jxl.*
+
+def XLPath = "/Users/vthakur/SOAPUI/Data/SoapUI_Smoke.xls"
+
+def NumOfXLSRows
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath))
+
+Sheet objSheet = objWB.getSheet(0)
+NumOfXLSRows = objSheet.getRows()
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)
+
+	narrative = objSheet.getCell(2,18).getContents()
+	
+	log.info("narrative for: " + narrative)
+	
+
+	testRunner.testCase.setPropertyValue("narrative", narrative)
+	
+objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Narrative Reterival"><con:settings/><con:config service="http://mabosmindtapm20:8181" resourcePath="/services/narrative/${#Project#version}/narratives/" methodName="Narratives" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Narrative Reterival" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://mabosmindtapm20:8181</con:endpoint><con:request/><con:originalUri>http://mabosmindtapm20/services/narrative/v1/narratives/</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>"transformType": "Mindtap"</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ids" value="${#TestCase#narrative}" xmlns="http://eviware.com/soapui/config"/></con:parameters><con:parameterOrder><con:entry>ids</con:entry></con:parameterOrder></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>narrative</con:name><con:value>ADWOTM405277750,PVYMUT059816719,VDOUGD236510217,OWMJWW761995312,PLFMYT182291620</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>narrative</con:name><con:value>ADWOTM405277750,PVYMUT059816719,VDOUGD236510217,OWMJWW761995312,PLFMYT182291620</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

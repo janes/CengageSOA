@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-workspace name="CengageSOA" soapui-version="5.0.0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:project name="SOA-252 REST project">/Users/vthakur/SOAPUI/SOA-252-Project-soapui-project.xml</con:project>
+  <con:project name="Course Services Project">/Users/vthakur/SOAPUI/SOA-202-soapui-project.xml</con:project>
+  <con:project name="Publiser Project">/Users/vthakur/SOAPUI/Publiser-Project-soapui-project.xml</con:project>
+</con:soapui-workspace>

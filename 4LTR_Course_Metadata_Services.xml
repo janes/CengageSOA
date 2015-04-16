@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="4LTR Course Metadata_Services" resourceRoot="" soapui-version="5.0.0" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="TestSuite" value="4LTR Course Metadata_Services TestSuite"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="TestRunner Path" value="/Applications/SoapUI-5.0.0.app/Contents/java/app/bin"/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Save Project" value="true"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="Root Folder" value="/Users/vthakur/SOAPUI/Reports"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="Endpoint" value="http://10.172.253.230:8181"/>
+  <con:entry key="Select Report Type" value=""/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.172.253.230:8181" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.172.253.230:8181</con:endpoint></con:endpoints><con:resource name="Previewitems" path="/services/${#Project#version}/metadata/course/${#TestCase#cdft_cgi}/chapter/${#TestCase#c_cgi}/${#TestCase#type_id}/"><con:settings/><con:parameters/><con:method name="Previewitems" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=ISO-8859-1</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:prev="http://10.172.253.230/services/v1/metadata/course/DECR00XWG2W0SJPSE949/chapter/ZGVKMU162088956/previewitems/">prev:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services//metadata/course//chapter//previewitems/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource><con:resource name="" path="/services/${#Project#version}/metadata/course/${#TestCase#cdft_cgi}/chapter/${#TestCase#c_cgi}/ahead/${#TestCase#c_cgi1}/bheads/"><con:settings/><con:parameters/><con:method name="Previewitems" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=ISO-8859-1</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:bhe="http://10.172.253.230/services/v1/metadata/course/DECR00XWG2W0SJPSE949/chapter/LMWHVT971000173/ahead/LMWHVT971000173/bheads/">bhe:Fault</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services//metadata/course//chapter//previewitems/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="" path="/services/${#Project#version}/metadata/course/${#TestCase#cdft_cgi}/chapter/${#TestCase#c_cgi}/cgi/${#TestCase#c_cgi1}/${#TestCase#type_id}"><con:settings/><con:parameters/><con:method name="Previewitems" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=ISO-8859-1</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:con1="http://10.172.253.230/services/v1/metadata/course/DECR00XWG2W0SJPSE949/chapter/JHIDPZ740999214/cgi/JHIDPZ740999214/concepts/">con1:Fault</con:element></con:representation><con:representation type="FAULT"><con:mediaType xsi:nil="true"/><con:status>404</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services//metadata/course//chapter//previewitems/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="" path="/services/v1/metadata/course/${#Project#cdft_cgi}/search/"><con:settings/><con:parameters/><con:method name="Previewitems" method="GET"><con:settings/><con:parameters/><con:representation type="FAULT"><con:mediaType>text/html;charset=ISO-8859-1</con:mediaType><con:status>404</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services//metadata/course//chapter//previewitems/</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:interface xsi:type="con:RestService" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://10.172.253.230:8181" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://10.172.253.230:8181</con:endpoint></con:endpoints><con:resource name="OMIJIV932485351" path="/services/v1/narrative/narratives/${#TestCase#narr_id}"><con:settings/><con:parameters/><con:method name="OMIJIV932485351" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:omij="http://10.172.253.230/services/v1/narrative/narratives/OMIJIV932485351">omij:Response</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings/><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource><con:resource name="narratives" path="/services/v1/narrative/narratives/"><con:settings/><con:parameters><con:parameter><con:name>ids</con:name><con:value>OMIJIV932485351,CWGYDN814340854,invalid</con:value><con:style>QUERY</con:style><con:default>OMIJIV932485351,CWGYDN814340854,invalid</con:default></con:parameter></con:parameters><con:method name="Method 1" method="GET"><con:settings/><con:parameters/><con:representation type="RESPONSE"><con:mediaType>application/json;charset=utf-8</con:mediaType><con:status>200</con:status><con:params/><con:element>Response</con:element></con:representation><con:request name="Request 1" mediaType="application/json"><con:settings/><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite name="4LTR Course Metadata_Services TestSuite"><con:description>TestSuite generated for REST Service [http://10.172.253.230:8181]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Preview Item" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Preview Groovy"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+cdft_cgi = objSheet.getCell(2,4).getContents() 
+c_cgi = objSheet.getCell(2,12).getContents() 	
+type_id = objSheet.getCell(2,25).getContents() 	
+
+log.info("Course Cgi for: " + cdft_cgi)
+	log.info("Chapter Cgi: " + c_cgi)
+	log.info("Metadata Type: " + type_id)
+	
+	testRunner.testCase.setPropertyValue("cdft_cgi", cdft_cgi)
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)		 
+	testRunner.testCase.setPropertyValue("type_id", type_id)		 
+//testRunner.runTestStepByName("Course Flat view")	  objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Get PreviewItem"><con:settings/><con:config service="http://10.172.253.230:8181" methodName="Previewitems" resourcePath="/services/${#Project#version}/metadata/course/${#TestCase#cdft_cgi}/chapter/${#TestCase#c_cgi}/${#TestCase#type_id}/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get PreviewItem" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services//metadata/course//chapter//previewitems/</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_id"><con:configuration><token>id</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_type"><con:configuration><token>type</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_previewItemType"><con:configuration><token>previewItemType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>cdft_cgi</con:name><con:value>DECR00XWG2W0SJPSE949</con:value></con:property><con:property><con:name>c_cgi</con:name><con:value>VSYHOX707529696</con:value></con:property><con:property><con:name>type_id</con:name><con:value>previewitems</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Chapter Aheads" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Ahead Groovy"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+cdft_cgi = objSheet.getCell(2,4).getContents() 
+c_cgi = objSheet.getCell(2,12).getContents() 	
+type_id = objSheet.getCell(2,26).getContents() 	
+
+log.info("Course Cgi for: " + cdft_cgi)
+	log.info("Chapter Cgi: " + c_cgi)
+	log.info("Metadata Type: " + type_id)
+	
+	testRunner.testCase.setPropertyValue("cdft_cgi", cdft_cgi)
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)		 
+	testRunner.testCase.setPropertyValue("type_id", type_id)		 
+//testRunner.runTestStepByName("Course Flat view")	  objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Get Chapter Aheads"><con:settings/><con:config service="http://10.172.253.230:8181" methodName="Previewitems" resourcePath="/services/${#Project#version}/metadata/course/${#TestCase#cdft_cgi}/chapter/${#TestCase#c_cgi}/${#TestCase#type_id}/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Copy of Get PreviewItem" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services//metadata/course//chapter//previewitems/</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_id"><con:configuration><token>id</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_type"><con:configuration><token>type</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_ordinal"><con:configuration><token>ordinal</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" name="Not Contains_previewItemType"><con:configuration><token>previewItemType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_assetType"><con:configuration><token>assetType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>VSYHOX707529696</con:value></con:property><con:property><con:name>cdft_cgi</con:name><con:value>DECR00XWG2W0SJPSE949</con:value></con:property><con:property><con:name>type_id</con:name><con:value>aheads</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Chapter Bheads" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Bhead Groovy"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+cdft_cgi = objSheet.getCell(2,4).getContents() 
+c_cgi = objSheet.getCell(3,30).getContents() 	
+c_cgi1 = objSheet.getCell(4,30).getContents()
+
+log.info("Course Cgi for: " + cdft_cgi)
+	log.info("Chapter Cgi: " + c_cgi)
+	log.info("Sub-Chapter Cgi: " + c_cgi1)	
+	
+	
+	testRunner.testCase.setPropertyValue("cdft_cgi", cdft_cgi)
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("c_cgi1", c_cgi1)			 
+			 
+//testRunner.runTestStepByName("Course Flat view")	  objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Get Chapter Bhead"><con:settings/><con:config service="http://10.172.253.230:8181" methodName="Previewitems" resourcePath="/services/${#Project#version}/metadata/course/${#TestCase#cdft_cgi}/chapter/${#TestCase#c_cgi}/ahead/${#TestCase#c_cgi1}/bheads/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Bhead1" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services/v1/metadata/course/DECR00XWG2W0SJPSE949/chapter//ahead//bheads/</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_description"><con:configuration><token>description</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_B-Head"><con:configuration><token>B-Head</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_ordinal"><con:configuration><token>ordinal</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>A_cgi</con:name><con:value>YUUFMF715234711</con:value></con:property><con:property><con:name>cdft_cgi</con:name><con:value>DECR00XWG2W0SJPSE949</con:value></con:property><con:property><con:name>c_cgi</con:name><con:value>VSYHOX707529696</con:value></con:property><con:property><con:name>c_cgi1</con:name><con:value>YUUFMF715234711</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Chapter Structure" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Structure Groovy"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+cdft_cgi = objSheet.getCell(2,4).getContents() 
+c_cgi = objSheet.getCell(2,12).getContents() 	
+type_id = objSheet.getCell(2,28).getContents() 	
+
+log.info("Course Cgi for: " + cdft_cgi)
+	log.info("Chapter Cgi: " + c_cgi)
+	log.info("Metadata Type: " + type_id)
+	
+	testRunner.testCase.setPropertyValue("cdft_cgi", cdft_cgi)
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)		 
+	testRunner.testCase.setPropertyValue("type_id", type_id)		 
+//testRunner.runTestStepByName("Course Flat view")	  objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Get Chapter Structure"><con:settings/><con:config service="http://10.172.253.230:8181" methodName="Previewitems" resourcePath="/services/${#Project#version}/metadata/course/${#TestCase#cdft_cgi}/chapter/${#TestCase#c_cgi}/${#TestCase#type_id}/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Chapter Structure" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services//metadata/course//chapter//previewitems/</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_id"><con:configuration><token>id</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_type"><con:configuration><token>type</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_ordinal"><con:configuration><token>ordinal</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" name="Not Contains_previewItemType"><con:configuration><token>previewItemType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_assetType"><con:configuration><token>assetType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_child"><con:configuration><token>child</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>VSYHOX707529696</con:value></con:property><con:property><con:name>cdft_cgi</con:name><con:value>DECR00XWG2W0SJPSE949</con:value></con:property><con:property><con:name>type_id</con:name><con:value>structure</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Chapter Learning Objective" searchProperties="true"><con:settings/><con:testStep type="groovy" name="LearningObj. Groovy"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+cdft_cgi = objSheet.getCell(2,4).getContents() 
+c_cgi = objSheet.getCell(2,12).getContents() 	
+type_id = objSheet.getCell(2,29).getContents() 	
+
+log.info("Course Cgi for: " + cdft_cgi)
+	log.info("Chapter Cgi: " + c_cgi)
+	log.info("Metadata Type: " + type_id)
+	
+	testRunner.testCase.setPropertyValue("cdft_cgi", cdft_cgi)
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)		 
+	testRunner.testCase.setPropertyValue("type_id", type_id)		 
+//testRunner.runTestStepByName("Course Flat view")	  objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Get Chapter Learning Objectives"><con:settings/><con:config service="http://10.172.253.230:8181" methodName="Previewitems" resourcePath="/services/${#Project#version}/metadata/course/${#TestCase#cdft_cgi}/chapter/${#TestCase#c_cgi}/${#TestCase#type_id}/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Chapter Learning Objectives" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services//metadata/course//chapter//previewitems/</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_id"><con:configuration><token>id</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_type"><con:configuration><token>type</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple NotContains" name="Not Contains_previewItemType"><con:configuration><token>previewItemType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>c_cgi</con:name><con:value>VSYHOX707529696</con:value></con:property><con:property><con:name>cdft_cgi</con:name><con:value>DECR00XWG2W0SJPSE949</con:value></con:property><con:property><con:name>type_id</con:name><con:value>learningobjective</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Chapter Concepts" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Concepts Groovy"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+
+cdft_cgi = objSheet.getCell(2,4).getContents() 
+c_cgi = objSheet.getCell(3,30).getContents() 	
+c_cgi1 = objSheet.getCell(4,30).getContents()
+type_id = objSheet.getCell(2,30).getContents() 	
+
+log.info("Course Cgi for: " + cdft_cgi)
+	log.info("Chapter Cgi: " + c_cgi)
+	log.info("Sub-Chapter Cgi: " + c_cgi1)	
+	log.info("Metadata Type: " + type_id)
+	
+	testRunner.testCase.setPropertyValue("cdft_cgi", cdft_cgi)
+	testRunner.testCase.setPropertyValue("c_cgi", c_cgi)
+	testRunner.testCase.setPropertyValue("c_cgi1", c_cgi1)			 
+	testRunner.testCase.setPropertyValue("type_id", type_id)		 
+//testRunner.runTestStepByName("Course Flat view")	  objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Get Chapter Concepts 1"><con:settings/><con:config service="http://10.172.253.230:8181" resourcePath="/services/${#Project#version}/metadata/course/${#TestCase#cdft_cgi}/chapter/${#TestCase#c_cgi}/cgi/${#TestCase#c_cgi1}/${#TestCase#type_id}" methodName="Previewitems" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Chapter Concepts" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services//metadata/course//chapter//previewitems/</con:originalUri><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>id</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_type"><con:configuration><token>type</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_nodeType"><con:configuration><token>nodeType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_description"><con:configuration><token>description</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>cdft_cgi</con:name><con:value>DECR00XWG2W0SJPSE949</con:value></con:property><con:property><con:name>c_cgi</con:name><con:value>VSYHOX707529696</con:value></con:property><con:property><con:name>c_cgi1</con:name><con:value>YUUFMF715234711</con:value></con:property><con:property><con:name>type_id</con:name><con:value>concepts</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Search" searchProperties="true" disabled="true"><con:settings/><con:testStep type="restrequest" name="REST Test Request"><con:settings/><con:config service="http://10.172.253.230:8181" methodName="Previewitems" resourcePath="/services/v1/metadata/course/${#Project#cdft_cgi}/search/" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="REST Test Request" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services/v1/metadata/course/DECR00XWG2W0SJPSE949/search/</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Single Narrative ID Retrival" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Narrative Groovy"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+	
+narr_id = objSheet.getCell(2,18).getContents() 	
+
+log.info("Narrative ID: " + narr_id)
+			 
+	testRunner.testCase.setPropertyValue("narr_id", narr_id)		 
+//testRunner.runTestStepByName("Course Flat view")	  objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Single Narrative Request"><con:settings/><con:config service="http://10.172.253.230:8181" resourcePath="/services/v1/narrative/narratives/${#TestCase#narr_id}" methodName="OMIJIV932485351" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Single Narrative Request" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services/v1/narrative/narratives/OMIJIV932485351</con:originalUri><con:assertion type="Simple Contains" name="Contains"><con:configuration><token>id</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_transformType"><con:configuration><token>transformType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_content"><con:configuration><token>content</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>narr_id</con:name><con:value>OMIJIV932485351</con:value></con:property></con:properties></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Multiple Narrative ID's retrival" searchProperties="true"><con:settings/><con:testStep type="groovy" name="Multiple Narrative Groovy"><con:settings/><con:config><script>import jxl.*  
+
+def NumOfXLSRows
+  
+def XLPath = testRunner.testCase.testSuite.project.getPropertyValue("XLPath") 
+ 
+log.info ("Path : " + XLPath)
+
+Workbook objWB = Workbook.getWorkbook(new File(XLPath)) 
+
+Sheet objSheet = objWB.getSheet(0) 
+
+NumOfXLSRows = objSheet.getRows()  
+
+log.info ("Number of TZ_Xls rows: " + NumOfXLSRows)  	 
+	
+narr_id = objSheet.getCell(2,19).getContents() 	
+
+log.info("Narrative ID: " + narr_id)
+			 
+	testRunner.testCase.setPropertyValue("narr_id", narr_id)		 
+//testRunner.runTestStepByName("Course Flat view")	  objWB.close()</script></con:config></con:testStep><con:testStep type="restrequest" name="Get Multiple Narrative Id's"><con:settings/><con:config service="http://10.172.253.230:8181" resourcePath="/services/v1/narrative/narratives/" methodName="Method 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Get Multiple Narrative Id's" mediaType="application/json"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:endpoint>http://10.172.253.230:8181</con:endpoint><con:request/><con:originalUri>http://10.172.253.230/services/v1/narrative/narratives/</con:originalUri><con:assertion type="Valid HTTP Status Codes" name="Valid HTTP Status Codes"><con:configuration><codes>200</codes></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_transformType"><con:configuration><token>transformType</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_content"><con:configuration><token>content</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Simple Contains" name="Contains_No record Message"><con:configuration><token>No record found with ID:</token><ignoreCase>false</ignoreCase><useRegEx>false</useRegEx></con:configuration></con:assertion><con:assertion type="Response SLA Assertion" name="Response SLA"><con:configuration><SLA>1000</SLA></con:configuration></con:assertion><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters><entry key="ids" value="${#TestCase#narr_id}" xmlns="http://eviware.com/soapui/config"/></con:parameters></con:restRequest></con:config></con:testStep><con:properties><con:property><con:name>narr_id</con:name><con:value>OMIJIV932485351,CWGYDN814340854,invalid</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>version</con:name><con:value>v1</con:value></con:property><con:property><con:name>XLPath</con:name><con:value>/Users/vthakur/SOAPUI/CengageSOA/Data/SoapUI_4LTR.xls</con:value></con:property><con:property><con:name>cdft_cgi</con:name><con:value>DECR00XWG2W0SJPSE949</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/></con:soapui-project>
